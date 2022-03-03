@@ -19,6 +19,7 @@
 /2010.08.19 detect new ftp filenames
 /2007.05.02 ftp trade cond is first non"@" char
 /(FTPday: taq*) (DVDmonth: *.tab *.idx *.bin) 1GB/min
+/Comment added
 "kdb+taq 3.0 2017.10.20"
 o:.Q.opt .z.x;if[2>#.Q.x;-1">q ",($.z.f)," SRC DST [-corr] [-join] [-host [host]:port..] [-par]";exit 1]
 F:F@&(_F:!src:`$":",*.Q.x)like;S:0N!`/:src,;dst:`$":",.Q.x[1],"/taq"
